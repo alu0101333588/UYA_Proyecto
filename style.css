@@ -8,7 +8,6 @@ footer {
 
 .carousel .carousel-item {
     height: 500px;
-    carousel-control-color: blue,
 }
   
 .carousel-item img {
@@ -19,28 +18,7 @@ footer {
     height: 500px;
 }
 
-#col {
-    color: white;
+.carousel-caption {
+    text-shadow: brown;
+    background-color: rgb(67, 8, 177);
 }
-
-
-.slider-container {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-type: x mandatory;
-  }
-  
-.slider-container img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-align: center;
-}
-
-
