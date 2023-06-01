@@ -2,8 +2,45 @@
 footer {
     color: white;
     text-align: center;
-    float:left;
     background-color: rgb(67, 8, 177);
-    width: auto;
-    height: auto;
 }
+
+
+.carousel .carousel-item {
+    height: 500px;
+    carousel-control-color: blue,
+}
+  
+.carousel-item img {
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    height: 500px;
+}
+
+#col {
+    color: white;
+}
+
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+  }
+  
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+}
+
+
