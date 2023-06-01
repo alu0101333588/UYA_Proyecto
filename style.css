@@ -7,15 +7,15 @@ footer {
 
 
 .carousel .carousel-item {
-    height: 500px;
+    height: 750px;
 }
   
 .carousel-item img {
     position: absolute;
-    object-fit: fill;
+    object-fit: cover; 
     top: 0;
     left: 0;
-    height: 500px;
+    height: 750px;
 }
 
 .carousel-caption {
