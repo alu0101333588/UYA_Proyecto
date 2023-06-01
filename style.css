@@ -22,3 +22,29 @@ footer {
     background-color: rgb(67, 8, 177);
 }
 
+
+.contenedor {
+    width: 90%;
+    align-items: center;
+    height: 500px;
+    margin: 10px auto;
+}
+
+.columna1 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+
+.columna2 {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+
+.texto-borde {
+    -webkit-text-stroke: 2px rgb(67, 8, 177);
+    color: transparent; 
+}
