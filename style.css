@@ -25,7 +25,7 @@ footer {
 
 
 .contenedor {
-    width: 90%;
+    width: 100%;
     align-items: center;
     height: 500px;
     margin: 10px auto;
@@ -51,17 +51,19 @@ footer {
 }
 
 .left {
-    background-color: #2196F3;
     padding: 20px;
     float: left;
     width: 50%; /* The width is 20%, by default */
 }
   
 .right {
-    background-color: #04AA6D;
     padding: 20px;
     float: left;
     width: 50%; /* The width is 20%, by default */
+    
+    background-color: white;
+    margin-top:0cm;
+    margin-bottom: 1cm;
 }
 
 .img-content{
