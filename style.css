@@ -23,6 +23,7 @@ footer {
 }
 
 
+
 .contenedor {
     width: 90%;
     align-items: center;
@@ -47,4 +48,34 @@ footer {
 .texto-borde {
     -webkit-text-stroke: 2px rgb(67, 8, 177);
     color: transparent; 
+}
+
+.left {
+    background-color: #2196F3;
+    padding: 20px;
+    float: left;
+    width: 50%; /* The width is 20%, by default */
+}
+  
+.right {
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 50%; /* The width is 20%, by default */
+}
+
+.img-content{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
 }
