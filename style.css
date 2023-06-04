@@ -143,3 +143,30 @@ h4 {
     font-family: 'Geologica', sans-serif;
     color:rgb(67, 8, 177);
 }
+
+
+div.history_container {
+    height: 850px; 
+    background-image: url(./images/pizza3.jpeg);
+    background-size: cover;
+}
+
+.history_us {
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
