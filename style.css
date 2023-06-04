@@ -95,17 +95,16 @@ footer {
 }
 
 .leftContact {
-    padding: 50px;
+    padding: 20px;
     float: left;
     width: 50%; /* The width is 20%, by default */
     text-align: left;
     background-color: white;
     margin-top:0cm;
-    margin-bottom: 1cm;
+
 }
 .rightContact {
     text-align: center;
-    margin-top: 50px;
     padding: 20px;
     background-color: rgb(67, 8, 177);
     float: left;
