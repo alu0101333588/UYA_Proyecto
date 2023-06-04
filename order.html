@@ -63,7 +63,7 @@
     <a style="margin-left: 0.5cm;">
         <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb" >
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="./index.html" style="color:rgb(67, 8, 177)">Inicio</a></li>
               <li class="breadcrumb-item active" aria-current="page">Hacer pedido</li>
             </ol>
         </nav>
@@ -78,49 +78,244 @@
       </a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">First</a>
+          <a class="nav-link" href="#scrollspyHeading1" style="color:rgb(67, 8, 177); background-color:transparent">Bebidas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Picoteo</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#scrollspyHeading3">
-              Hamburgesas
-            </a></li>
-            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Hamburguesas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Pizzas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Sandwiches</a>
         </li>
       </ul>
     </nav>
+    
+    
+
+
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" style="margin-left: 1cm; margin-right: 1cm">
+      
+      <!-- Carrito de la compra-->
+      <div class="left">
+          <!-- Elementos generados a partir del JSON -->
+          <main id="items" class="col-sm-8 row"></main>
+          <!-- Carrito -->
+          <aside class="col-sm-4">
+              <h2 style="color:rgb(67, 8, 177)">Tu pedido</h2>
+              <!-- Elementos del carrito -->
+              <ul id="carrito" class="list-group"></ul>
+              <hr>
+              <!-- Precio total -->
+              <p class="text-right">Total: <span id="total"></span>&euro;</p>
+              <button id="boton-vaciar" class="btn btn-danger" style="border-color: transparent; background-color: rgb(67, 8, 177);">Vaciar</button>
+          </aside>
+      </div>
+      
+      <h4 id="scrollspyHeading0">PROMOCIÓN</h4>
+      <p>
+        
+        <div class="card mb-3">
+          <img src="./images/people_eat_1.png" class="card-img-top" alt="Fotografía de un chico una chica bebiendo un refresco con pizzas en la mano">
+          <div class="card-body">
+            <h5 class="card-title">¡OFERTA!</h5>
+            <p class="card-text">Por la compra de 2 pizzas te regalamos 1 refresco</p>
+            <p class="card-text"><small class="text-body-secondary">Precio: 12 €</small></p>
+          </div>
+        </div>
+    
+      </p>
+
       <h4 id="scrollspyHeading1">BEBIDAS</h4>
-      <p>...</p>
+      <p>
+
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/productos/cocacola.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refresco Coca-Cola</h5>
+              <p class="card-text">Bien fresquito</p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/pepsi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refresco Pepsi</h5>
+              <p class="card-text">Bien fresquito</p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/dorada.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cerveza Dorada</h5>
+              <p class="card-text" style="color:red"><strong>AVISO: </strong>No se permite la venta de alcohol a menores de 18 años</p><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 2 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/fanta.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refresco Fanta sabor Naranja</h5>
+              <p class="card-text">Bien fresquito</p><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/nestea.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refresco Nestea</h5>
+              <p class="card-text">Bien fresquito</p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/clipper.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refresco Clipper sabor fresa</h5>
+              <p class="card-text">Bien fresquito</p><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+        </div>
+
+
+      </p><br>
       <h4 id="scrollspyHeading2">PICOTEO</h4>
-      <p>...</p>
+      <p>
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/productos/nachos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nachos con queso</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/alitas_pollo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Alitas de pollo</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/ensalada.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ensalada de la Huerta</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 2 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/nuggets.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Caja 6 Nuggets de pollo</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos//papas_fritas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Papas fritas</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/tomates_cherry.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tomates cherry</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 1,10 €</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </p>
       <h4 id="scrollspyHeading3">PIZZAS</h4>
-      <img src="./images/separador5.svg" alt="Banner 'Mood Pizza'" width="100%" height="100%" fill="currentColor">
+      <img src="./images/banner_mood_pizza.svg" alt="Banner 'Mood Pizza'" width="100%" height="100%" fill="currentColor">
       <p>...</p>
       <h4 id="scrollspyHeading4">HAMBURGUESAS</h4>
       <p>...</p>
       <h4 id="scrollspyHeading5">
         SANDWICHES</h4>
       <p>...</p>
-      <h4 id="scrollspyHeading5">
-        HAPPY BULLS</h4>
+      <h4 id="scrollspyHeading5">HAPPY BULLS: MENÚ INFANTIL</h4> 
+        <img src="./images/banner_happy_bulls.svg" alt="Banner 'Menú Infantil - Happy Bulls'" width="100%" height="100%" fill="currentColor">
       <p>...</p>
       
     </div>
+
+
+    
+
+
 
     
     
     <!--Pie de pagina-->
     <footer>
       <img src="./images/separador_pie_pagina.svg" alt="Siénte el chorreteo" width="100%" height="100%" fill="currentColor">
-      <img src="./images/logo_white.png" alt="Logo Laguna BULLS" width="200" height="me-auto" fill="currentColor">
+      <img src="./images/logo_white.svg" alt="Logo Laguna BULLS" width="200" height="me-auto" fill="currentColor">
       <hr size="4px" color="white" />
 
       <div class="container text-center">
