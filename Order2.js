@@ -1,6 +1,6 @@
 const carrito = document.getElementById('carrito');
-const cursos = document.getElementById('lista-cursos');
-const listaCursos = document.querySelector('#lista-carrito tbody')
+const pedidos = document.getElementById('pedido');
+const listaProductos = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 
 eventslisteners();
@@ -8,7 +8,7 @@ eventslisteners();
 function eventslisteners() 
 {
     //atento a cuando se presiona agregar carrito
-    cursos.addEventListener('click', comprarCurso);
+    pedidos.addEventListener('click', comprarProducto);
 
     //eliminar curso en el carrito
     carrito.addEventListener('click', eliminarCurso);
@@ -16,33 +16,32 @@ function eventslisteners()
     //vaciar carrit de compras
     vaciarCarritoBtn.addEventListener('click', vaciarcarrito);
 
-    //mostrar lista de cursos en carrito de compra al cargar DOM-LS
+    //mostrar lista de pedidos en carrito de compra al cargar DOM-LS
     document.addEventListener('DOMContentLoaded', leerLS)
 
 }
 
-function comprarCurso(e) 
+function comprarProducto(e) 
 {
     e.preventDefault();
-    //delegation para agregar carrito
+    // delegation para agregar carrito
     if (e.target.classList.contains("agregar-carrito")) {
         const curso = e.target.parentElement.parentElement;
-        //enviamos el curso seleccionado para tomar sus datos
-        leerDatosCurso(curso);
+        //enviamos el producto seleccionado para tomar sus datos
+        leerDatosProducto(curso);
     }    
 }
 
 
-//leer Datos del Curso
-function leerDatosCurso(curso) {
-    const infoCurso = {
-        imagen: curso.querySelector('img').src,
-        titulo: curso.querySelector('h4').textContent,
+//leer los datos del producto
+function leerDatosProducto(curso) {
+    const infoProducto = {
+        titulo: curso.querySelector('h5').textContent,
         precio: curso.querySelector('.precio span').textContent,
         id: curso.querySelector('a').getAttribute('data-id')
     }
 
-    insertarCurso(infoCurso);
+    insertarCurso(infoProducto);
 }
 
 // insertar Curso en el carrito
@@ -54,8 +53,7 @@ function insertarCurso(curso) {
         <td>${curso.precio}</td>
         <td><a href="#" class="borrar-curso" data-id="${curso.id}">X</a></td>    
     `;
-    listaCursos.appendChild(row);
-    guardarCursoLocalStorage(curso);
+    listaProductos.appendChild(row);
 
 }
 
@@ -77,24 +75,14 @@ function eliminarCurso(e)
 //vacias Carrito
 function vaciarcarrito() 
 {
-    //listaCursos.innerHTML = '';
-    while(listaCursos.firstChild){
-        listaCursos.removeChild(listaCursos.firstChild);
+    //listaProductos.innerHTML = '';
+    while(listaProductos.firstChild){
+        listaProductos.removeChild(listaProductos.firstChild);
     }    
     //vaciar carrito  de LS
     vaciarLs();
 
     return false;    
-}
-
-//almacenar curso al LS
-function guardarCursoLocalStorage(curso)
-{
-    let cursos;
-    cursos = obtenerCursosLocalStorage();
-    //El curso seleccionado se agrega al Array
-    cursos.push(curso);
-    localStorage.setItem('cursos', JSON.stringify(cursos));
 }
 
 
@@ -103,15 +91,15 @@ function obtenerCursosLocalStorage()
 {
     let cursosLS;
     //comprobamos si no hay naad o es nulo, creamos el array vacío
-    if (localStorage.getItem('cursos') === null) {
+    if (localStorage.getItem('pedidos') === null) {
         cursosLS = [];        
     } else {
-        cursosLS = JSON.parse(localStorage.getItem('cursos'));
+        cursosLS = JSON.parse(localStorage.getItem('pedidos'));
     }
     return cursosLS;
 }
 
-//pinta los cursos desde LS en el carrito
+//pinta los pedidos desde LS en el carrito
 function leerLS() 
 {
     let cursosLS;
@@ -127,7 +115,7 @@ function leerLS()
         <td>${curso.precio}</td>
         <td><a href="#" class="borrar-curso" data-id="${curso.id}">X</a></td>    
     `;
-        listaCursos.appendChild(row);
+        listaProductos.appendChild(row);
 
     })
 }
@@ -136,7 +124,7 @@ function leerLS()
 function eliminarCursoLS(curso) 
 {
     let cursosLS;
-    //obtnemos el arreglo con los cursos
+    //obtnemos el arreglo con los pedidos
     cursosLS = obtenerCursosLocalStorage();
     //iteramo para buscar coincidencias y eliminar
     cursosLS.forEach(function(cursoLS, index) {
@@ -145,11 +133,11 @@ function eliminarCursoLS(curso)
       }
     });
 
-    localStorage.setItem('cursos', JSON.stringify(cursosLS));
+    localStorage.setItem('pedidos', JSON.stringify(cursosLS));
 
 }
 
-//eliminar todos los cursos del LS
+//eliminar todos los pedidos del LS
 function vaciarLs() {
     localStorage.clear();
 }

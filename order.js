@@ -1,3 +1,55 @@
+const carrito = document.getElementById('carrito');
+const pedidos = document.getElementById('pedido');
+const listaProductos = document.querySelector('#lista-carrito tbody')
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
+
+eventslisteners();
+
+function eventslisteners() 
+{
+    //atento a cuando se presiona agregar carrito
+    pedidos.addEventListener('click', comprarProducto);
+
+}
+
+function insertarCurso(producto) {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td><img src="${producto.imagen}" width="100"></td>
+        <td>${producto.titulo}</td>
+        <td>${producto.precio}</td>
+        <td><a href="#" class="borrar-producto" data-id="${producto.id}">X</a></td>    
+    `;
+    listaProductos.appendChild(row);
+
+}
+
+
+//leer los datos del producto
+function leerDatosProducto(producto) {
+    const infoProducto = {
+        titulo: producto.querySelector('h5').textContent,
+        precio: producto.querySelector('.precio span').textContent,
+        id: producto.querySelector('a').getAttribute('data-id')
+    }
+
+    insertarProducto(infoProducto);
+}
+
+function comprarProducto(e) 
+{
+    e.preventDefault();
+    // delegation para agregar carrito
+    if (e.target.classList.contains("agregar-carrito")) {
+        const producto = e.target.parentElement.parentElement;
+        //enviamos el producto seleccionado para tomar sus datos
+        leerDatosProducto(producto);
+    }    
+}
+
+////////////////////
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Variables
     const baseDeDatos = [
