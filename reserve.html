@@ -76,17 +76,16 @@
       </div>
     </div>
 
-    <!-- Separador--> 
-    <img src="./images/banner_chorreteo.svg" alt="Banner con texto 'Siente el chorreteo'" width="100%" height="100%" fill="currentColor">
+    <!-- Separador -->
+    <img src="./images/separador3.svg" alt="Separador de color violeta" width="100%" height="100%" fill="currentColor"><br><br>
     
-    <!-- Segundo contenido--> 
-    Con nosotros podrán celebrar cualquier evento que deseen, para reservar una fecha o para más información, por favor rellenen el siguiente formulario y nos pondremos en contacto con ustedes.
-
     <!-- Formulario -->
     <div style="background-color: rgb(50, 6, 133); color:white; padding: 20px;">
       <div class="container text-left" style="padding-top: 20px;">
         <form>
-            <h3>Con nosotros podrán celebrar cualquier evento que deseen, para reservar una fecha o para más información, por favor rellenen el siguiente formulario y nos pondremos en contacto con ustedes.</h3>
+            <h1>Con nosotros podrán celebrar cualquier evento que deseen</h1>
+            <p>Para reservar una fecha o para más información, por favor rellenen el siguiente formulario y nos pondremos en contacto con ustedes.</p>
+
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Nombre </label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre Apellidos">
@@ -98,13 +97,22 @@
               <div id="emailHelp" class="form-text" style="color: white;">Nunca compartiremos tu correo electrónico.</div>
             </div>
 
+            <label for="exampleInputEmail1" class="form-label">Tipo de celebración</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccione una</option>
+              <option value="1">Cumpleaños</option>
+              <option value="2">Boda</option>
+              <option value="3">Fin de curso</option>
+              <option value="4">Otro</option>
+            </select><br>
+
             <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Asunto </label>
+              <label for="formGroupExampleInput" class="form-label">Número de asistentes </label>
               <input type="text" class="form-control" id="formGroupExampleInput" >
             </div>
 
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
@@ -113,6 +121,8 @@
               <label class="form-check-label" for="exampleCheck1"> Acepto la política de tratamiento de datos</label>
             </div>
             <button type="submit" class="btn btn-primary"> Envíar </button>
+
+            * La confirmación de la reserva se llevará a cabo en la llamada telefónica que el restaurante establecerá con usted en un plazo máximo de 48 horas (días laborales).
           </form>
       </div>
     </div>
