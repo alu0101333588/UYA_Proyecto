@@ -81,27 +81,28 @@
       </a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1" style="color:rgb(67, 8, 177); background-color:transparent">Bebidas</a>
+          <a class="nav-link" href="#Bebidas" style="color:rgb(67, 8, 177); background-color:transparent">Bebidas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Picoteo</a>
+          <a class="nav-link" href="#Picoteo" style="color:rgb(67, 8, 177); background-color:transparent">Picoteo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Hamburguesas</a>
+          <a class="nav-link" href="#Pizzas" style="color:rgb(67, 8, 177); background-color:transparent">Pizzas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Pizzas</a>
+          <a class="nav-link" href="#Hamburguesas" style="color:rgb(67, 8, 177); background-color:transparent">Hamburguesas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2" style="color:rgb(67, 8, 177); background-color:transparent">Sandwiches</a>
+          <a class="nav-link" href="#Sandwiches" style="color:rgb(67, 8, 177); background-color:transparent">Sandwiches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#HappyBull" style="color:rgb(67, 8, 177); background-color:transparent">Menú infantil</a>
         </li>
       </ul>
     </nav>
     
     
-
-
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" style="margin-left: 1cm; margin-right: 1cm">
+    <div id="pedido" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" style="margin-left: 1cm; margin-right: 1cm">
       
       <!-- Carrito de la compra-->
       <div class="left">
@@ -131,23 +132,37 @@
           </div>
         </div>
     
-      </p>
+      </p><br><br><br>
 
-      <h4 id="scrollspyHeading1">BEBIDAS</h4>
+
+      <h4 id="Bebidas">BEBIDAS</h4>
       <p>
 
         <div class="card-group">
+
+
+          <!-- PRUEBAS CARRITO -->
           <div class="card">
             <img src="./images/productos/cocacola.png" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body" class="info-card">
               <h5 class="card-title">Refresco Coca-Cola</h5>
               <p class="card-text">Bien fresquito</p><br><br>
               <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+              <a href="#" class="btn btn-primary input agregar-carrito" data-id="2" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">Precio: 1,20 €</small>
+              <small class="text-body-secondary">Precio: <a class="precio" style="text-decoration: none; color:rgb(67, 8, 177)">1,20 €</a></small>
             </div>
           </div>
+
+
+          
+
+
+
+
+
+
           <div class="card">
             <img src="./images/productos/pepsi.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -210,7 +225,7 @@
 
 
       </p><br>
-      <h4 id="scrollspyHeading2">PICOTEO</h4>
+      <h4 id="Picoteo">PICOTEO</h4>
       <p>
         <div class="card-group">
           <div class="card">
@@ -290,29 +305,297 @@
           </div>
         </div>
 
-
-
-
-      </p>
-      <h4 id="scrollspyHeading3">PIZZAS</h4>
+      </p><br>
+      <h4 id="Pizzas">PIZZAS</h4>
       <img src="./images/banner_mood_pizza.svg" alt="Banner 'Mood Pizza'" width="100%" height="100%" fill="currentColor">
       <p>
 
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/productos/pizza_atun.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Atún</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/pizza_cuatro_quesos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Cuatro Quesos</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/pizza_peperoni.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Peperoni</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/pizza_pollo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Pollo</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/pizza_pollo_2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Pollo vegetal</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/pizza_vegetal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza vegetal</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 8,10 €</small>
+            </div>
+          </div>
+        </div>
+
+      </p><br>
+      <h4 id="Hamburguesas">HAMBURGUESAS</h4>
+      <p>
+
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/productos/hamburguesa_bacon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa de Bacon</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/hamburguesa_pepinillos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa con pepinillos</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/hamburguesa_queso.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa con queso</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 2 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/hamburguesa_super.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Super Bull</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/hamburguesa_vegana.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa vegana</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/hamburguesa_XL.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Bull Premium</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 5,10 €</small>
+            </div>
+          </div>
+        </div>
+
+      </p><br>
+      <h4 id="Sandwiches">
+        SANDWICHES</h4>
+      <p>
+
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/productos/sandwich_guacamole.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sandwich de guacamole</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/sandwich_jamon_pollo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sandwich de pollo y jamón</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/sandwich_mini_atun.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pack 4 mini Sandwiches de atún</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 2 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/sandwich_mini_super.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pack 4 mini Sandwiches Super Bull</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/sandwich_mini_vegetal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pack 4 Sandwich vegetales</h5>
+              <p class="card-text">Contiene gluten
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,10 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/productos/sandwich_mixto.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sandwich mixto: un clásico</h5>
+              <p class="card-text">Contiene gluten y lactosa
+              </p><br><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 5,10 €</small>
+            </div>
+          </div>
+        </div>
+
+
+      </p><br>
+      <h4 id="HappyBull">HAPPY BULLS: MENÚ INFANTIL</h4> 
+        <img src="./images/banner_happy_bulls.svg" alt="Banner 'Menú Infantil - Happy Bulls'" width="100%" height="100%" fill="currentColor">
+      <p> 
+      <div class="card-group">
+        <div class="card">
+        </div>
+
         
+          <div class="card">
+            <img src="./images/productos/menu_infantil_1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Menú Happy Bull</h5>
+              <p class="card-text">Incluye una hamburguesa de queso, papas fritas y un refresco. De regalo un juguete 
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 5,20 €</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/productos/hamburguesa_a_trozos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa personalizada</h5>
+              <p class="card-text">Hamburguesa con los ingredientes y tamaño que quieras
+              </p><br><br>
+              <a href="#" class="btn btn-primary" style="border-color: transparent; background-color: rgb(67, 8, 177);">Añadir</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Precio: 3,20 €</small>
+            </div>
+          </div>
+
+          <div class="card">
+          </div>
 
 
-
+        </div>
 
 
       </p>
-      <h4 id="scrollspyHeading4">HAMBURGUESAS</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading5">
-        SANDWICHES</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading5">HAPPY BULLS: MENÚ INFANTIL</h4> 
-        <img src="./images/banner_happy_bulls.svg" alt="Banner 'Menú Infantil - Happy Bulls'" width="100%" height="100%" fill="currentColor">
-      <p>...</p>
       
     </div>
 

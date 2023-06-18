@@ -9,8 +9,8 @@
     <link media="screen" href="./style.css" type="text/css" rel="stylesheet">
 
     <title>Laguna BULLS</title>
-    
-    
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!--Barra de navegacion-->
@@ -52,16 +52,84 @@
       </div>
     </nav>
 
-    <!--Barra de localizacion-->
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
-      </ol>
+    <!-- Barra de localizacion--> 
+    <a style="margin-left: 0.5cm;">
+      <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb" >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Reservar</li>
+          </ol>
       </nav>
-      
+    </a>
+
+    <!-- Primer contenido--> 
+    <div class="contenedor" style="height: 90px;"> 
+      <div class="left">
+        <img src="./images/party_people.png" class="img-content" alt="Fotografía de Fiesta" width="800px" height="me-auto" fill="currentColor">
+     </div>
+
+      <div class="right">
+        <h1 style="font-size: 350%; line-height: 60px; color:rgb(67, 8, 177); text-align: center;">CELEBBRA CON NOSOTROS</h1>
+        <p style="color: black; font-size: 150%; line-height: 40px; text-align: center;"> Quiere celebrar su fiesta de cumpleaños y no sabe donde, está buscando donde comer en un día 
+          especial, ven a Laguna Bulls y haremos que ese día sea especial.</p><br>
+      </div>
+    </div>
+
+    <!-- Separador -->
+    <img src="./images/separador3.svg" alt="Separador de color violeta" width="100%" height="100%" fill="currentColor"><br><br>
+    
+    <!-- Formulario -->
+    <div style="background-color: rgb(50, 6, 133); color:white; padding: 20px;">
+      <div class="container text-left" style="padding-top: 20px;">
+        <form>
+            <h1>Con nosotros podrán celebrar cualquier evento que deseen</h1>
+            <p>Para reservar una fecha o para más información, por favor rellenen el siguiente formulario y nos pondremos en contacto con ustedes.</p>
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre </label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre Apellidos">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.es">
+              <div id="emailHelp" class="form-text" style="color: white;">Nunca compartiremos tu correo electrónico.</div>
+            </div>
+
+            <label for="exampleInputEmail1" class="form-label">Tipo de celebración</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccione una</option>
+              <option value="1">Cumpleaños</option>
+              <option value="2">Boda</option>
+              <option value="3">Fin de curso</option>
+              <option value="4">Otro</option>
+            </select><br>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Número de asistentes </label>
+              <input type="text" class="form-control" id="formGroupExampleInput" >
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1"> Acepto la política de tratamiento de datos</label>
+            </div>
+            <button type="submit" class="btn btn-primary"> Envíar </button>
+
+            * La confirmación de la reserva se llevará a cabo en la llamada telefónica que el restaurante establecerá con usted en un plazo máximo de 48 horas (días laborales).
+          </form>
+      </div>
+    </div>
+
+
     <!--Pie de pagina-->
     <footer>
+      <img src="./images/separador_pie_pagina.svg" alt="Siénte el chorreteo" width="100%" height="100%" fill="currentColor">
       <img src="./images/logo.svg" alt="Logo Laguna BULLS" width="500" height="me-auto" fill="currentColor">
       <hr size="4px" color="white" />
 
@@ -79,7 +147,7 @@
             <p style="font-size: 2em;"><strong>Contacto</strong></p>
             <p style="font-size: 1.5em;">922 567 812 / 687 241 873</p>
             <p>contacto@lagunabulls.es</p>
-            <p>Carr. Gral del Norte., 987</p>
+            <p>Carr. Gral del Norte., 371</p>
             <p>38350 Tacoronte - S/C de Tenerife</p>
 
             <button type="button" class="btn btn-outline-light" alt="Icono WhatsAp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">

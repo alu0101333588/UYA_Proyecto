@@ -98,7 +98,7 @@ footer {
     padding: 20px;
     float: left;
     width: 50%; /* The width is 20%, by default */
-    text-align: left;
+    text-align: center;
     background-color: white;
     margin-top:0cm;
 
@@ -106,7 +106,7 @@ footer {
 .rightContact {
     text-align: center;
     padding: 20px;
-    background-color: rgb(67, 8, 177);
+    background-color: white;
     float: left;
     width: 50%; /* The width is 20%, by default */
 }
